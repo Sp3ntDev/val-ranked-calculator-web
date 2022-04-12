@@ -50,7 +50,7 @@ h2 {
 .vtitle svg {
     fill:#fb4959; 
     display:inline;
-    width: 500px;
+    max-width: 500px;
 }
 
 .playerlist {
