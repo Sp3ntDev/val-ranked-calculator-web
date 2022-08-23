@@ -94,50 +94,6 @@ h2 {
 }
 
 
-.rankfind {
-    position: absolute;
-    display: flex;
-    
-    flex-direction: column;
-    justify-content: center;
-    
-    
-
-}
-
-.rankfind div {
-    display: flex;
-    font-size: 30px;
-    
-    
-    flex:50%;
-    
-    
-    justify-content: center;
-
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-
-}
-
-.rankfind div:last-child {
-    display: flex;
-    font-size: 30px;
-
-    bottom:10px;
-    
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-
-}
-
-
-.rankfindimg {
-    width: 40%;
-    height: auto;
-}
 
 .rankpicker {
     display: flex;
@@ -145,20 +101,37 @@ h2 {
     flex-direction: row;
     
     
+    
     justify-content: center;
     align-items: center;
     
 }
 
+.rankdiv {
+    display: flex;
+    /* flex: 1; */
+    width:100%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    
+    
+    justify-content: space-between;
+    align-items: center;
+}
 
-.rankpicker img {
-    flex: 33%;
-    width: 6vh;
+
+
+
+
+.rankitem {
+    /* flex: 33%; */
+    max-width: 33%; 
+    
     height: auto;
     transition: background-color 0.5s;
 }
 
-.rankpicker img:hover {
+.rankitem:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -175,4 +148,12 @@ h2 {
 
 .hide {
     display: none !important;
+}
+@media (max-width:900px){
+    .rankdiv {
+        flex-wrap: wrap;
+    }
+    .rankitem {
+        max-width: 100%; 
+    }
 }
