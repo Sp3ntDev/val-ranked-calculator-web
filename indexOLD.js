@@ -6,7 +6,16 @@
 //Viper green - #0db25b
 
 //Every item [lowest, highest] acceptable range. if the lowest is not specified then get the round down
-const dispArray = [[0,8], [6,11], [9,14], [12,15], [13,16], [14,17],[15,18], [16,19], [17,20], [18,21]];
+const dispArray = [[0,8], //Iron 1 -> Silver 3
+[6,11], // Bronze 3 -> Gold 3
+[9,14], // Silver 1 -> plat 3
+[12,15], // Plat 1 -> Dia 1
+[13,16], // 
+[14,17],
+[15,18], 
+[16,19], 
+[17,20], 
+[18,21]];
 
 function calculateRankStuff(plArray) {
     //returns [canplay, comments, rr reduction if applicable]
