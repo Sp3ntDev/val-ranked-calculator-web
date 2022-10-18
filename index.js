@@ -142,6 +142,14 @@ function constructCompTiersHTMLDropdown() {
     //TODO
 }
 
+function costructEpisodeOptions() {
+
+}
+
+function constructActOptions() {
+    
+}
+
 function constructCompTiersRankPicker(tierIndex) {
     console.log(g_compTiers)
     var rankPickerDiv = $('<div class="rankpicker hide">')
